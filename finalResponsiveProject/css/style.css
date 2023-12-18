@@ -1,0 +1,40 @@
+/* For mobile phones: */
+@media all and (min-width: 420px) {
+    figure {
+        column-gap: 10px;
+    }
+}
+
+/* For Tablet Screen  View: */
+@media all and (min-width: 772px) {
+    figure {
+        width: 50vw;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    figure:last-of-type {
+        width: 100vw;
+    }
+}
+
+/* For Larg Screen  View: */
+@media all and (min-width: 992px) {
+    figure:nth-of-type(3n+0) {
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: unset;
+    }
+}
+@media (prefers-color-scheme: dark) { 
+    figure{
+        background-color:rgb(51, 50, 50);
+        color: rgb(232, 232, 113);
+        border: 1px black;
+    }
+}
